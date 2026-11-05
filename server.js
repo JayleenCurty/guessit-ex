@@ -9,8 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // 2. Whenever you run the application, set the DATABASE_URL environment
 //variable to the URL of the database, with the same password.
-const DATABASE_URL =
-  'postgresql://guessit@localhost:5432/guessit';
+const DATABASE_URL = process.env.DATABASE_URL || 'postgresql://guessit@localhost:5432/guessit';
 
 // The colour used for the page's accent (buttons, title). Change it if you
 // like a different look.
